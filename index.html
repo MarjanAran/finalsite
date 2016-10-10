@@ -9,6 +9,23 @@
         <link rel="stylesheet" type="text/css" href="assets/css/envato-frame-fix.css">
     </head>
     <body class="layout-body layout-body--home">
+        <script>
+            !function(e, a, t, n, c, o, s) {
+                e.GoogleAnalyticsObject = c,
+                e[c] = e[c] || function() {
+                    (e[c].q = e[c].q || []).push(arguments)
+                }
+                ,
+                e[c].l = 1 * new Date,
+                o = a.createElement(t),
+                s = a.getElementsByTagName(t)[0],
+                o.async = 1,
+                o.src = n,
+                s.parentNode.insertBefore(o, s)
+            }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"),
+            ga("create", "UA-49600144-2", "auto"),
+            ga("send", "pageview");
+        </script>
         <div class="layout layout-width">
             <div class="layout-anti-scroll layout-anti-scroll--active layout-width"></div>
             <div class="layout-header layout-width">
@@ -153,10 +170,8 @@
             <div class="style-panel__button">
                 <i class="fa fa-paint-brush"></i>
             </div>
-            <div class="style-panel__reset">
-                <button class="btn-reset btn btn-xs btn--style1">reset</button>
-            </div>
         </div>
+        <script type="text/javascript" src="assets/jslib/jquery.cookie.js"></script>
         <script type="text/javascript" src="assets/js/StylePanel.js"></script>
     </body>
 </html>
